@@ -1,0 +1,82 @@
+/* ====================================
+	
+	Template: Unitech
+
+======================================== */
+
+.slider-area {
+  display: block;
+  position: relative;
+}
+.slide-table {
+  display: table;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.slide-content {
+  margin-bottom: 270px;
+  margin-top: 270px;
+}
+.slide-content h1 {
+  animation-delay: 0.8s;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 25px;
+}
+.slide-content p {
+  animation-delay: 1.2s;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 20px;
+  padding-left: 225px;
+  padding-right: 225px;
+}
+.slide-btn a {
+  background: #5950f7 none repeat scroll 0 0;
+  box-shadow: 0 0 1px transparent;
+  color: #fff;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transform-origin: 0 100% 0;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: middle;
+  width: 160px;
+  animation-delay: 1.6s;
+  transition:.3s;
+  font-size:14px;
+}
+.slide-btn a:hover{
+-webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+  background:#000;
+  color:#fff;
+}
+
+/* Slider Animation Css */
+.slide-content *{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards ;
+  animation-fill-mode: backwards ;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+.active .slide-content h1{
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn; 
+}
+.active .slide-content p {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; 
+}
+.active .slide-content .slide-btn a {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; 
+}
